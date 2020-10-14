@@ -1,6 +1,6 @@
-package Pachet2;
+package pachet2;
 
-import Pachet1.Mobilier;
+import pachet1.Mobilier;
 
 public class Dulap extends Mobilier {
 

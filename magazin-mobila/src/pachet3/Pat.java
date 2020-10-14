@@ -1,6 +1,6 @@
-package Pachet3;
+package pachet3;
 
-import Pachet1.Mobilier;
+import pachet1.Mobilier;
 
 public class Pat extends Mobilier {
 
@@ -24,16 +24,15 @@ public class Pat extends Mobilier {
 	}
 
 	public boolean isAreSomiera() {
-		if (getDenumireModel().startsWith("a") || getDenumireModel().startsWith("e")
-				|| getDenumireModel().startsWith("i")||getDenumireModel().startsWith("o")) {
-			return true;
-		} else {
-			return false;
-		}
+		return areSomiera;
 	}
 
 	public void setAreSomiera(boolean areSomiera) {
 		this.areSomiera = areSomiera;
+		if (getDenumireModel().startsWith("a") || getDenumireModel().startsWith("e")
+				|| getDenumireModel().startsWith("i") || getDenumireModel().startsWith("o")) {
+			areSomiera = true;
+		}
 	}
 
 }

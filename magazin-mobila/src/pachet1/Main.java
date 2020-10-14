@@ -1,7 +1,7 @@
-package Pachet1;
+package pachet1;
 
-import Pachet2.Dulap;
-import Pachet3.Pat;
+import pachet2.Dulap;
+import pachet3.Pat;
 
 public class Main {
 
