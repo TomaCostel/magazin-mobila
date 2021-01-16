@@ -28,10 +28,15 @@ public class Pat extends Mobilier {
 	}
 
 	public void setAreSomiera(boolean areSomiera) {
-		this.areSomiera = areSomiera;
-		if (getDenumireModel().startsWith("a") || getDenumireModel().startsWith("e")
-				|| getDenumireModel().startsWith("i") || getDenumireModel().startsWith("o")) {
-			areSomiera = true;
+		if (areSomiera == true) {
+			if (getDenumireModel().startsWith("a") || getDenumireModel().startsWith("e")
+					|| getDenumireModel().startsWith("i") || getDenumireModel().startsWith("o")) {
+				this.areSomiera = areSomiera;
+			} else {
+				System.out.println("Nu se poate seta true");
+			}
+		} else {
+			this.areSomiera = areSomiera;
 		}
 	}
 

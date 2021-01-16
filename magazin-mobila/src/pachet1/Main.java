@@ -14,6 +14,8 @@ public class Main {
 		Dulap dulap2 = new Dulap();
 		Pat pat1 = new Pat(true);
 		Pat pat2 = new Pat();
+	
+		System.out.println(pat1.isIncludeSaltea());
 	}
 
 }

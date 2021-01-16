@@ -1,6 +1,6 @@
 package pachet1;
 
-public class Mobilier {
+public   class Mobilier {
 
 	private String denumireModel;
 	private String tipLemn;
@@ -8,11 +8,11 @@ public class Mobilier {
 	private double latime;
 	private double adancime;
 
-	public Mobilier() {
+	public Mobilier()	{
 
 	}
 
-	public Mobilier(String tipLemn) {
+	protected Mobilier(String tipLemn) {
 		this.tipLemn = tipLemn;
 	}
 
